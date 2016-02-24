@@ -19,7 +19,7 @@ shinyUI(pageWithSidebar(
             p('The average mpg for the selected type of transmission and number of cylinders is predicted below'),
             textOutput("selectedValue"),
             textOutput("selectedCyl"),
-            textOutput("predictedValue"),
+            strong(textOutput("predictedValue")),
             h3("Exploratory Data Analysis"),
             p('The box plot below indicates average mpg for different cylinder levels for the selected type of transmission.'),
             plotOutput('chart')
