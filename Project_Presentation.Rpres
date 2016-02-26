@@ -1,0 +1,86 @@
+<style>
+.small-code pre code {
+  font-size: 0.75em;
+}
+.xsmall pre code {
+  font-size: 0.5em;
+}
+.bckgrnd .reveal .state-background {
+  background: #CCCCCC;
+} 
+
+.reveal .slides section .slideContent h2 {
+   font-size: 40px;
+   font-weight: bold;
+   color: green;
+}
+.reveal .slides section .slideContent h4 {
+   font-size: 30px;
+   font-weight: bold;
+   color: black;
+}
+/* ordered and unordered list styles */
+.reveal ul, 
+.reveal ol {
+    font-size: 25px;
+    color: black;
+    list-style-type: square;
+}
+
+</style>
+Developing Data Products
+
+Coursera Project Presentation
+========================================================
+author: Sreeja
+date: `r date()`
+type:bckgrnd
+
+Motor Trends - Auto road-test analysis
+========================================================
+type:bckgrnd
+
+This report is developed as a part of the Coursera - Developing Data Products course project. The basic goals of this course project are to 
+
+- Build and deploy an application using Shiny
+- Create a documentation / report with HTML slides using Slidify or R Presenter
+
+The completed products should then be published to Github pages or RPubs for further peer evaluations.
+
+Motor Trends - Auto road-test analysis
+========================================================
+class: small-code
+type:bckgrnd
+
+The data set used for this project is the **mtcars** dataset which contains data extracted from the 1974 Motor Trend US magazine and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973-74 models).
+```{r}
+str(mtcars)
+```
+
+
+Shiny App Details
+========================================================
+class: small-code
+type:bckgrnd
+
+The Shiny application for Motor Trend analysis a side panel for collecting input and a main panel with two tabs. "Visualize the Data" tab shows the predictive and exploratory data analysis and the "Dataset" tab shows the raw data table used for prediction
+<div class="midcenter" style="margin-left:300px;">
+<img src="App_screenshot.png"></img>
+</div>
+
+Shiny App - Input & Output details
+========================================================
+class:.xsmall
+type:bckgrnd
+
+#### The sidebar lets the user input two values
+- The type of Transmission - Manual or Automatic
+- The number of cylinders - 4,6,8
+
+#### On selecting or changing values of these input parameters, the "Visualize the Data" tab shows the following Dynamic output
+- Display the selected values for transmission and cylinder
+- Predicted Miles per Gallon (mpg) for the selected type of transmission and number of cylinders.A Linear model is fitted on to the mtcars dataset and then this is used to predict the mpg for the given type of transmission and number of cylinders
+- A box plot shows the comparison of MPG across different number of cylinders for the selected type of transmission
+
+## Enjoy Predeciting ... 
+
