@@ -10,4 +10,4 @@ The goal of the project is
 ### Application details
 The application developed for this project is called "Motor Trends Analyis" and he deployed online using shiny App server and can be accessed here.
 
-<a herf="https://sreenez.shinyapps.io/ShinyProject/"> Motor Trends Analysis - Application</a>
+[Motor Trends Analysis] ("https://sreenez.shinyapps.io/ShinyProject/")
